@@ -1,0 +1,218 @@
+body,
+.mui-input-row label,
+.mui-icon{
+	font-family: "microsoft yahei", "微软雅黑";
+	line-height:initial;
+}
+.cm-flex {
+	display: -moz-box !important;
+	display: -webkit-box !important;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+}
+
+.cm-flex>*:not(.mui-hidden){
+	width: auto !important;
+	float: none !important;
+	display: block !important;
+	position: relative;
+}
+
+.cm-flex-1 {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+
+.cm-icon-back{
+	width: 10px;
+	height: 19px;
+	background-image: url(../img/my-icon-right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute !important;
+	left: 20px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.cm-transparent{
+	background-color: rgba(0,0,0,0);
+	-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.cm-icon-home{
+	width: 25px !important;
+	height: 25px;
+	background-image: url(../img/icon-home.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute !important;
+	right: 20px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	right: 15px;
+	content: '';
+	width: 8px;
+	height: 15px;
+	background: url(../img/icon-list.png) no-repeat;
+	background-size: contain;
+}
+
+.mui-icon-clear:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: url(../img/icon-clear.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: -5px -5px;
+}
+
+.mui-radio input[type=radio]:before,
+.mui-checkbox input[type=checkbox]:before{
+	content: '';
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: url(../img/icon-check.png) no-repeat;
+	background-size: 35px 35px;
+	background-position: -6px -6px;
+}
+
+.mui-radio input[type=radio]:checked:before,
+.mui-checkbox input[type=checkbox]:checked:before{
+	content: '';
+	background: url(../img/icon-checked.png) no-repeat;
+	background-size: 35px 35px;
+	background-position: -6px -6px;
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.mui-left input[type=radio]{
+	left: 10px;
+	right: initial;
+}
+
+.cm-btn-pink{
+	background-color: #d89282;
+	color: #FFFFFF;
+	border: 0;
+	border-radius: 30px;
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+.mui-bar .mui-btn-link {
+	color: #000000;
+}
+
+.mui-icon-search:before,
+.mui-search.mui-active:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: url(../img/icon-search.png) no-repeat;
+	background-size: contain;
+}
+
+.mui-bar-nav{
+	-webkit-box-shadow: 0 0px 0px #ccc;
+    box-shadow: 0 0px 0px #ccc;
+}
+
+.cm-floating-button{
+	color: #fff;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: 1500;
+    overflow: hidden;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.cm-floating-up{
+	bottom: 81px;
+}
+.cm-floating-button .cm-buy-num{
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+.cm-floating-buy{
+	bottom: 16px;
+}
+.cm-icon-buy:before{
+	content: '';
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/icon-buy.png) no-repeat;
+	background-size: contain;
+}
+.cm-icon-up:before{
+	content: '';
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/icon-up.png) no-repeat;
+	background-size: contain;
+}
+.mui-poppicker{
+	background-color: #FFFFFF;
+}
+.mui-poppicker-header .mui-btn{
+	border: 0;
+}
+.mui-poppicker-btn-ok{
+	background-color: initial;
+	color: #000000;
+}
+.mui-picker{
+	background-color: #FFFFFF;
+}
+
+.cm-buy-num {
+       width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    color: #000000;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.cm-floating-shopping{
+	bottom: 20px;
+}

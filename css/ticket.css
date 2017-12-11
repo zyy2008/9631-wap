@@ -1,0 +1,231 @@
+.mui-bar{
+	background-color: #FFFFFF;
+}
+.cm-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 94px;
+	overflow-y: auto;
+	background-color: #f2f2f2;
+}
+.mui-segmented-control{
+	border: 0;
+	background-color: #FEFFFE !important;
+}
+.mui-segmented-control .mui-control-item{
+	border-left: 0;
+	color: #000000;
+	line-height: 50px;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	color: #d89282;
+	background-color: initial;
+}
+.mui-segmented-control .mui-control-item.mui-active  span{
+	display: inline-block;
+	line-height: 30px;
+	border-bottom: 1px solid #d89282;
+}
+.mui-table-view{
+	background-color: initial;
+	height: auto;
+}
+.cm-ticket{
+	position: relative;
+}
+.cm-ticket img{
+	width: 100%;
+	vertical-align: top;
+}
+.cm-ticket .mui-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: 100%;
+	-webkit-writing-mode:vertical-lr;
+	text-align: center;
+}
+.cm-ticket .mui-left span{
+	-webkit-writing-mode:initial;
+}
+.cm-ticket .mui-left h4{
+	margin: 0;
+	padding: 0px 10px;
+}
+.cm-ticket .mui-left p{
+	margin: 0;
+}
+.cm-ticket-name{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 59px;
+	/*height: 112px;*/
+	margin: auto;
+}
+.cm-ticket .mui-left p{
+	font-size: 13px;
+}
+.cm-ticket .mui-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75%;
+	height: 100%;
+}
+.cm-ticket .mui-right h2{
+	font-size: 18px;
+	margin: 0;
+}
+.cm-ticket .mui-right p{
+	bottom: 0;
+}
+.cm-ticket .mui-right h2,
+.cm-ticket .mui-right p{
+	color: #000000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	text-align: center;
+}
+.cm-ticket-no .mui-right h2,
+.cm-ticket-no .mui-right p,
+.cm-ticket-no .mui-right i,
+.cm-ticket-no .mui-left h4,
+.cm-ticket-no .mui-left p{
+	color: #a8a8a8;
+}
+.cm-ticket .mui-right i{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-style: initial;
+	font-size: 14px;
+}
+.cm-ticket-type{
+	/*width: 288px;*/
+	height: 44px;
+	display: block;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+}
+.cm-ticket-no .cm-ticket-type:after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	right: 50px;
+	top: -15px;
+	z-index: 0;
+}
+.cm-ticket-away .cm-ticket-type:after{
+	background: url(../img/ticket-away.png) no-repeat;
+	background-size: contain;
+}
+.cm-ticket-past .cm-ticket-type:after{
+	background: url(../img/ticket-past.png) no-repeat;
+	background-size: contain;
+}
+.cm-ticket-used .cm-ticket-type:after{
+	background: url(../img/ticket-used.png) no-repeat;
+	background-size: contain;
+}
+.mui-table-view-cell:after{
+	content: none;
+}
+.mui-table-view-cell{
+	padding: 10px 5px;
+	padding-bottom: 0;
+}
+.mui-control-content{
+	height: 100%;
+}
+.cm-noticket{
+	height: 93px;
+	position: absolute;
+	display: inline-block;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.cm-noticket img{
+	width: 60px;
+}
+.cm-noticket p{
+	margin-bottom: 0;
+}
+/*增加可使用优惠券*/
+.cm-useticket .cm-ticket-type{
+	top:15%;
+	bottom: initial;
+}
+.cm-useticket input{
+	-webkit-appearance: none;
+	background-image: none;
+	background-color: initial;
+	outline: 0!important;
+	border: 0;
+	width: 45px;
+	height: 21px;
+	position: absolute;
+	display: inline-block;
+	left: 10px;
+	bottom: 10px;
+}
+.cm-useticket input:before{
+	content: '';
+	width: 45px;
+	height: 21px;
+	display: block;
+	background: url(../img/ticket-check.png) no-repeat;
+	background-size: contain;
+}
+.cm-useticket input:checked:before{
+	content: '';
+	width: 45px;
+	height: 21px;
+	display: block;
+	background: url(../img/ticket-checked.png) no-repeat;
+	background-size: contain;
+}
+.mui-bar-footer .mui-col-xs-9 {
+    padding-left: 0;
+    background-color: #303030;
+}
+.mui-bar-footer .mui-col-xs-3 {
+    background-color: #eb6363;
+    display: table-cell;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    color: #FFFFFF;
+}
+.mui-bar-footer {
+    padding: 0;
+    height: 50px;
+}
+.mui-bar-footer p {
+    margin-bottom: 0;
+    padding-left: 10px;
+    color: #FFFFFF;
+}
+.mui-bar-footer p span{
+	color: #d24263;
+	padding: 0px 5px;
+}

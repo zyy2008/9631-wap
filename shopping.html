@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+		<meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>购物袋</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/shopping.css">
+		<link rel='stylesheet' href="css/alert.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon cm-icon-back mui-pull-left"></a>
+			<a class="mui-icon cm-icon-home mui-pull-right"></a>
+			<h1 class="mui-title">我的购物袋</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell cm-listing">
+					<a class="mui-navigate-right">
+						<span class="mui-badge mui-pull-left">清单</span> 已集齐9631系，立减￥1000，快去凑单
+					</a>
+				</li>
+			</ul>
+			
+			<!--免费送鞋券当商品有券的时候需要判断点击两个以上出现此界面-->
+			<!--<div class="cm-bottom-flex">
+				<span class="mui-badge">劵</span>
+				有可用免费送鞋券（使用前请单独下单）
+			</div>-->
+			
+			<!--已经售罄是li标签加上cm-active-->
+			<ul class="mui-table-view cm-shoppingcar">
+				<li class="mui-table-view-cell cm-active">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">
+							<i class="mui-icon cm-icon-list-delete"></i>
+						</a>
+					</div>
+					<div class="mui-slider-handle ">
+						<a href="#">
+							<div class="mui-table cm-list-good">
+								<div class="mui-table-cell mui-col-xs-10 mui-checkbox">
+									<input type="checkbox">
+									<img src="http://dcloud.io/hellomui/images/logo.png" class="mui-media-object mui-pull-left" />
+									<div class="mui-media-body">
+										<p class="mui-ellipsis">6系列-漆皮纯色粗跟高跟鞋</p>
+										<p class="mui-ellipsis">
+											<span class="cm-goods-size">尺寸：28</span>
+											<span class="cm-goods-color">颜色：黑色</span>
+										</p>
+									</div>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2">
+									<p class="cm-goods-price">￥<span>155</span></p>
+									<p class="cm-goods-discount">￥<span>899</span></p>
+								</div>
+							</div>
+							<div class="mui-table cm-list-gift">
+								<div class="mui-table-cell mui-col-xs-10">
+									<img src="http://dcloud.io/hellomui/images/logo.png" class="mui-media-object mui-pull-left">
+									<div class="mui-media-body">
+										<p class="mui-ellipsis">赠品06-6系列</p>
+									</div>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2">
+									<p class="cm-goods-price">￥0</p>
+									<p class="cm-goods-discount">￥300</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="mui-table-view-cell cm-active">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">
+							<i class="mui-icon cm-icon-list-delete"></i>
+						</a>
+					</div>
+					<div class="mui-slider-handle ">
+						<a href="#">
+							<div class="mui-table cm-list-good">
+								<div class="mui-table-cell mui-col-xs-10 mui-checkbox">
+									<input type="checkbox" data-seriesid = '1' data-val = '0'>
+									<img src="http://dcloud.io/hellomui/images/logo.png" class="mui-media-object mui-pull-left" />
+									<div class="mui-media-body">
+										<p class="mui-ellipsis">1系列-漆皮纯色粗跟高跟鞋</p>
+										<p class="mui-ellipsis">
+											<span class="cm-goods-size">尺寸：28</span>
+											<span class="cm-goods-color">颜色：黑色</span>
+										</p>
+										<div class="mui-ellipsis">
+											<i class="mui-icon cm-icon-drop">降价100元</i>
+											<i class="mui-icon cm-icon-ku">仅剩2件</i>
+										</div>
+									</div>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2">
+									<p class="cm-goods-price">￥<span>499</span></p>
+									<p class="cm-goods-discount">￥<span>899</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="mui-table-view-cell cm-active">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">
+							<i class="mui-icon cm-icon-list-delete"></i>
+						</a>
+					</div>
+					<div class="mui-slider-handle ">
+						<a href="#">
+							<div class="mui-table cm-list-good">
+								<div class="mui-table-cell mui-col-xs-10 mui-checkbox">
+									<input type="checkbox" data-seriesid = '3' data-val = '0'>
+									<img src="http://dcloud.io/hellomui/images/logo.png" class="mui-media-object mui-pull-left" />
+									<div class="mui-media-body">
+										<p class="mui-ellipsis">3系列-漆皮纯色粗跟高跟鞋</p>
+										<p class="mui-ellipsis">
+											<span class="cm-goods-size">尺寸：28</span>
+											<span class="cm-goods-color">颜色：黑色</span>
+										</p>
+										<div class="mui-ellipsis">
+											<i class="mui-icon cm-icon-drop">降价100元</i>
+											<i class="mui-icon cm-icon-ku">仅剩2件</i>
+										</div>
+									</div>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2">
+									<p class="cm-goods-price">￥<span>699</span></p>
+									<p class="cm-goods-discount">￥<span>899</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="mui-table-view-cell cm-active">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">
+							<i class="mui-icon cm-icon-list-delete"></i>
+						</a>
+					</div>
+					<div class="mui-slider-handle ">
+						<a href="#">
+							<div class="mui-table cm-list-good">
+								<div class="mui-table-cell mui-col-xs-10 mui-checkbox">
+									<input type="checkbox" data-seriesid = '6' data-val = '0'>
+									<img src="http://dcloud.io/hellomui/images/logo.png" class="mui-media-object mui-pull-left" />
+									<div class="mui-media-body">
+										<p class="mui-ellipsis">6系列-漆皮纯色粗跟高跟鞋</p>
+										<p class="mui-ellipsis">
+											<span class="cm-goods-size">尺寸：28</span>
+											<span class="cm-goods-color">颜色：黑色</span>
+										</p>
+										<div class="mui-ellipsis">
+											<i class="mui-icon cm-icon-drop">降价100元</i>
+											<i class="mui-icon cm-icon-ku">仅剩2件</i>
+										</div>
+									</div>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2">
+									<p class="cm-goods-price">￥<span>399</span></p>
+									<p class="cm-goods-discount">￥<span>899</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="mui-table-view-cell cm-active">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">
+							<i class="mui-icon cm-icon-list-delete"></i>
+						</a>
+					</div>
+					<div class="mui-slider-handle ">
+						<a href="#">
+							<div class="mui-table cm-list-good">
+								<div class="mui-table-cell mui-col-xs-10 mui-checkbox">
+									<input type="checkbox" data-seriesid = '9' data-val = '0'>
+									<img src="http://dcloud.io/hellomui/images/logo.png" class="mui-media-object mui-pull-left" />
+									<div class="mui-media-body">
+										<p class="mui-ellipsis">9系列-漆皮纯色粗跟高跟鞋</p>
+										<p class="mui-ellipsis">
+											<span class="cm-goods-size">尺寸：28</span>
+											<span class="cm-goods-color">颜色：黑色</span>
+										</p>
+										<div class="mui-ellipsis">
+											<i class="mui-icon cm-icon-drop">降价100元</i>
+											<i class="mui-icon cm-icon-ku">仅剩2件</i>
+										</div>
+									</div>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2">
+									<p class="cm-goods-price">￥<span>899</span></p>
+									<p class="cm-goods-discount">￥<span>899</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		<footer class="mui-bar mui-bar-footer">
+			<div class="mui-table">
+				<div class="mui-table-cell mui-col-xs-9 mui-checkbox mui-left">
+					<input type="checkbox"  />
+					<p>实付款：￥<span>0</span></p>
+				</div>
+				<a class="mui-table-cell mui-col-xs-3 mui-icon">
+					结算
+				</a>
+			</div>
+		</footer>
+		</div>
+		<!--没有商品的情况-->
+		<!--<div class="cm-shopping-nolist">
+			<img src="img/icon-shopping-nolist.png" />
+	    	<p>购物袋还是空的，去选购商品吧</p>
+	    	<a class="cm-btn">去逛逛</a>
+		</div>-->
+		<script src="js/mui.min.js" type="text/javascript"></script>
+		<script src="js/zepto.min.js" type="text/javascript"></script>
+		<script>
+			mui.init();
+			(function($, $$) {
+				$$.ready(function() {
+					var inputAll = $('.cm-list-good input[type="checkbox"]').length;
+					$('.cm-shoppingcar').on('change', 'input', function() {
+						var total = 0;
+						var checkedValues = '';
+						var count = $('.cm-list-good input[type="checkbox"]:checked').length;
+						var value = count ? "结算(" + count + ")" : "结算";
+						
+						$('.cm-list-good input[type=checkbox]:checked').each(function(index,input){
+							total += parseInt($(this).parent().siblings().find('.cm-goods-price span').text());
+						});
+						
+						//增加活动组合列表
+						if($('.cm-list-good input[type="checkbox"]:checked').length == 4){
+							$('.cm-list-good input[type="checkbox"]:checked').each(function(index,input){
+								checkedValues += input.dataset.seriesid;
+							});
+							if(checkedValues.indexOf('1')>=0 && checkedValues.indexOf('3')>=0 && checkedValues.indexOf('6')>=0 && checkedValues.indexOf('9')>=0){
+								//活动价格
+								total = '1999';
+							}
+							
+						};
+						
+						if(count == inputAll) {
+							$('.mui-bar-footer input')[0].checked = true;
+						} else {
+							$('.mui-bar-footer input')[0].checked = false;
+						};
+						$('.mui-bar-footer .mui-icon').text(value);
+						$('.mui-bar-footer span').text(total);
+					});
+					$('.mui-bar-footer .mui-icon').bind('tap',function(){
+						var btnArray = ['重新下单', '不用送鞋券'];
+						$$.confirm('您有免费送鞋券可用，但是只能单独下单才能使用', '温馨提示', btnArray, function(e) {
+							if (e.index == 1) {
+								console.log(1);
+							} else {
+								console.log(2);
+							}
+						})
+					});
+					$('.mui-bar-footer input').bind('change',function(){
+						var total = 0 ;
+						var count = 0 ;
+						if($(this)[0].checked){
+							$('.cm-list-good input[type=checkbox]').each(function(index,input){
+								input.checked = true;
+								count = $('.cm-list-good input[type="checkbox"]:checked').length;
+								total += parseInt($(this).parent().siblings().find('.cm-goods-price span').text());
+							});
+						}else{
+							$('.cm-list-good input[type=checkbox]').each(function(index,input){
+								input.checked = false;
+								count = $('.cm-list-good input[type="checkbox"]:checked').length;
+							});
+						};
+						var value = count ? "结算(" + count + ")" : "结算";
+						$('.mui-bar-footer .mui-icon').text(value);
+						$('.mui-bar-footer span').text(total);
+					});
+				});
+			})(Zepto, mui)
+		</script>
+	</body>
+
+</html>

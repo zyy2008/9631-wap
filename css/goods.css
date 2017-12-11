@@ -1,0 +1,130 @@
+body{
+	background-color: rgba(0,0,0,0);
+}
+.mui-bar,
+.mui-content{
+	background-color: #FFFFFF;
+}
+.mui-bar .mui-search {
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	bottom: 0;
+}
+.cm-icon-list:before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	display: block;
+	background: url(../img/icon-list.png) no-repeat center;
+	background-size: contain;
+	-webkit-transform: rotate(90deg);
+}
+.mui-bar input[type=search] {
+	border-radius: 30px;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #000000;
+}
+.mui-bar-tab .mui-tab-item.mui-active .mui-icon{
+	-webkit-transform: rotate(180deg);
+}
+.mui-bar-tab .mui-tab-item .mui-icon{
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+}
+.mui-bar-tab{
+	border-bottom: 1px solid #f2f2f2;
+	border-top: 1px solid #f2f2f2;
+}
+.mui-bar-tab .mui-tab-item{
+	position: relative;
+	font-size: 15px;
+	color: #000000;
+}
+.mui-bar-tab .mui-tab-item:nth-child(2):before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	top: 10px;
+	bottom: 10px;
+	background-color: #f2f2f2;
+	left: 0;
+}
+.mui-bar-tab .mui-tab-item:nth-child(2):after{
+	content: '';
+	position: absolute;
+	width: 1px;
+	top: 10px;
+	bottom: 10px;
+	background-color: #f2f2f2;
+	right: 0;
+}
+.mui-content-padded{
+	position: absolute;
+	top: 52px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	margin: 0;
+}
+.mui-bar-nav~.mui-content .mui-pull-top-pocket{
+	top: 0;
+}
+.mui-control-content{
+	z-index: 3;
+}
+.mui-control-content{
+	text-align: center;
+	z-index: 999;
+}
+.mui-table-view-radio .mui-selected{
+	color: #dda193;
+}
+.mui-table-view-radio .mui-table-view-cell{
+	padding-right: 15px;
+}
+.mui-backdrop{
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+.mui-backdrop.mui-active{
+	display: block;
+	opacity: 1;
+}
+.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn){
+	margin-right: 0;
+	font-size: 16px;
+	margin-left: 0;
+}
+.mui-icon-pulldown:before{
+	content: '';
+	width: 10px;
+	height: 18px;
+	background: url(../img/icon-refresh-up.png) no-repeat;
+	background-size: contain;
+	display: block;
+}
+.cm-ticket-bar{
+	width: 100%;
+	padding: 5px 15px;
+	background-color: #f5dec9;
+	position: relative;
+	font-size: 14px;
+}
+/*.cm-ticket-bar:after{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	display: block;
+	background: url(../img/icon-arrowright.png) no-repeat;
+	background-size: contain;
+	top: 0;
+	bottom: 0;
+	right: 15px;
+	margin: auto;
+}*/

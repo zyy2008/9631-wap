@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+    <meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>申请售后</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/order_thesun.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+<body>
+<header class="mui-bar mui-bar-nav my_order_header">
+    <a href="my_order_details.html"><img src="img/icon_return.png" class="mui-pull-left my_order_title_return"></a>
+    <h1 class="mui-title">申请售后</h1>
+</header>
+<div class="mui-card-header mui-card-media my_order_dd_list">
+    <img class="my_order_dd_list_img" src="http://dcloud.io/hellomui/images/logo.png">
+    <div class="mui-media-body my_order_dd_list_zi">
+        春秋冬季你好哈哈哈
+        <p class="my_order_dd_list_zi_ma">
+            颜色：黑色 尺码：36
+            <span class="mui-pull-right my_order_dd_list_zi_jiage">￥799</span>
+        </p>
+    </div>
+</div>
+
+<ul class="mui-table-view mui-table-view-radio">
+    <li class="mui-table-view-cell2">
+        <a class="mui-navigate-right2">
+            服务类型
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-selected">
+        <a class="mui-navigate-right">
+            退货
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-table-view-cell_3">
+        <a class="mui-navigate-right my_order_moren">
+            换货
+        </a>
+    </li>
+</ul>
+<div class="mui-content-padded">
+    <p>
+        问题描述
+    </p>
+</div>
+<div class="mui-input-row" style="border: none">
+    <textarea id="textarea" rows="5" placeholder="请描述遇到的问题"></textarea>
+    <span class="thtesun_text_zi">1/500</span>
+</div>
+<div id="feedback" class="mui-page feedback mui-page-center" style="">
+    <div class="mui-page-content">
+        <div id='image-list' class="row image-list">
+        </div>
+    </div>
+</div>
+<div class="mui-content-padded thesun_btn">
+    <button id='thesun_submit' class="mui-btn mui-btn-block cm-btn-pink">提 交</button>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script src="js/feedback-page.js"></script>
+<script>
+    mui.init();
+
+    mui(document).on('tap','#thesun_submit',function(){
+        mui.openWindow('my_order_sf.html');
+    });
+    $('#textarea').on('input propertychange',function(){
+        var text_length = $('#textarea').val().length;
+        $('.thtesun_text_zi').text(text_length+'/500');
+    });
+    mui(document).on('tap','.my_order_title_return',function(){
+        mui.openWindow('my_order_details.html');
+    });
+</script>
+</body>
+
+</html>

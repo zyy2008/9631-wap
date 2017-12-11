@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+		<meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>我的收货地址</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<style>
+			.mui-bar{
+				background-color: #FFFFFF;
+			}
+			a.mui-bar .mui-title{
+				color: #d89282;
+				line-height: 60px;
+			}
+			a.mui-bar .mui-title img{
+				width: 20px;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			a.mui-bar.mui-bar-footer{
+				height: 60px;
+				line-height: 60px;
+				-webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+				box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+			}
+			.mui-radio{
+				position: absolute;
+				left: 50px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			.mui-table .mui-col-xs-10{
+				padding-left: 30px;
+			}
+			.mui-table .mui-col-xs-2{
+				/*height: 100%;*/
+			}
+			.cm-default{
+				color: #d89282;
+			}
+			.cm-name{
+				font-size: 16px;
+			}
+			.cm-phone{
+				font-size: 15px;
+				margin-left: 30px;
+			}
+			.cm-icon-edit:before{
+				content: '';
+				width: 20px;
+				height: 20px;
+				display: block;
+				background: url(img/icon-eidt.png) no-repeat;
+				background-size: contain;
+				position: absolute;
+				margin: auto;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.cm-icon-edit:after{
+				content: '';
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 1px;
+				height: 30px;
+				background-color: #cfcfcf;
+			}
+			.mui-ellipsis-2{
+				margin-bottom: 5px;
+			}
+			.mui-table-view-cell{
+				margin-bottom: 10px;
+				background-color: #FFFFFF;
+			}
+			.mui-table-view{
+				background-color: initial;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon cm-icon-back mui-pull-left"></a>
+			<h1 class="mui-title">地址管理</h1>
+		</header>
+		<div class="mui-content">
+			 <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                	<div class="mui-radio">
+		                		<input type="radio" name="radio" />
+		                	</div>
+		                    <!--<h4 class="mui-ellipsis-2">信息化推进办公室张彦合同付款信息化推进办公室张彦合同付款信息化推进办公室张彦合同付款</h4>-->
+		                    <div class="mui-ellipsis-2">
+		                    	<span class="cm-name">萧雨</span>
+		                    	<span class="cm-phone">13311236919</span>
+		                    </div>
+		                    <p class="mui-h5 mui-ellipsis"><span class="cm-default">[默认]</span>北京市海淀区朝阳大街A座576</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2">
+		                	<div class="mui-icon cm-icon-edit"></div>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                	<div class="mui-radio">
+		                		<input type="radio" name="radio" />
+		                	</div>
+		                    <div class="mui-ellipsis-2">
+		                    	<span class="cm-name">萧雨</span>
+		                    	<span class="cm-phone">13311236919</span>
+		                    </div>
+		                    <p class="mui-h5">北京市海淀区朝阳大街A座576A座576A座576A座576</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2">
+		                	<div class="mui-icon cm-icon-edit"></div>
+		                </div>
+		            </div>
+		        </li>
+		       </ul>
+		</div>
+		<a class="mui-bar mui-bar-footer">
+			<h4 class="mui-title"><img src="img/add-address.png" />添加收货人地址</h4>
+		</a>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+		 mui.init();
+		 mui.ready(function () {
+		   	//增加条选中
+		   	mui('.mui-table-view-striped').on('tap','.mui-col-xs-10',function(){
+		   		$(this).find('input')[0].checked = true ;
+		   	});
+		 });
+		</script>
+	</body>
+</html>

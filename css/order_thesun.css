@@ -1,0 +1,311 @@
+body{
+    background-color: #f2f2f2;
+    height: auto;
+    overflow-x: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimHei,sans-serif;
+}
+
+ul,p{
+    margin: 0;
+    padding: 0;
+}
+.my_order_header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    box-shadow: none;
+}
+.my_order_header,.mui-title{
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.my_order_title_return{
+    background: url("../img/icon_return.png")no-repeat center;
+    background-size: cover;
+    margin-top: 14px;
+    height: 22px;
+}
+.my_order_thesun_sp{
+    height: 60px;
+    background-color: #FFFFFF;
+}
+
+.mui-card-header>.my_order_dd_list_img_zp:first-child
+{
+    width: 40px;
+    height: 40px;
+}
+.mui-card-header.mui-card-media .my_order_dd_list_zi_zp{
+    margin-left: 50px;
+}
+.mui-card-header.mui-card-media .my_order_dd_list_zi_ma_zp{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 12px;
+    color: #000;
+}
+
+.my_order_thesun_sp:after{
+    right: 10px;
+    left: 10px;
+}
+.order_thesun_list{
+    background-color: #ffffff;
+}
+.order_thesun_list:after{
+    left: 15px;
+    right: 15px;
+}
+.my_order_dd_list_img_zp{
+    width: 40px;
+    height: 40px;
+}
+.mui-ellipsis-2{
+    color: #000;
+    font-size: 15px;
+}
+.order_thesun_list_img{
+    width: 18%;
+    height: 0;
+    border-radius: 4px;
+    margin-left: 4%;
+}
+.order_thesun_list_img:nth-child(1){
+    margin-left: 0;
+}
+.order_thesun_list_img_center{
+    margin-top: 12px;
+}
+#textarea{
+    border: none;
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #8e8484;
+    margin-bottom: 0;
+}
+.mui-content-padded{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px 10px 5px 15px;
+    font-size: 14px;
+}
+.mui-content-padded p{
+    color: #000;
+}
+.thtesun_text_zi{
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+    font-size: 12px;
+    color: #8e8484;
+}
+.mui-input-row{
+    height: 135px;
+}
+.cm-btn-pink{
+    background-color: #d89282;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.thesun_btn{
+    background:none;
+    padding-top: 50px;
+    padding-bottom: 18px;
+}
+
+
+/*申请售后样式*/
+.my_order_dd_list{
+    height: 80px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.my_order_dd_list:after{
+    background-color: #FFFFFF;
+}
+.my_order_dd_list > .my_order_dd_list_img:first-child{
+    width: 60px;
+    height: 60px;
+}
+.my_order_dd_list > .my_order_dd_list_img:first-child{
+    width: 60px;
+    height: 60px;
+}
+div.my_order_dd_list_zi:first-child{
+    margin-left: 55px;
+    position: relative;
+}
+.my_order_dd_list_zi_ma{
+    margin-top: 8px;
+    color: #000;
+    position: relative;
+}
+.my_order_dd_list_zi_jiage{
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    bottom: 0;
+}
+
+.mui-card-header.mui-card-media .mui-media-body {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    margin-bottom: 0;
+    margin-left: 74px;
+    color: #333;
+}
+.mui-table-view-cell2 {
+    position: relative;
+    overflow: hidden;
+    padding: 11px 15px;
+    -webkit-touch-callout: none;
+}
+.mui-table-view-cell2 a{
+    color: #000;
+}
+
+
+
+.mui-table-view-cell2:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-table-view-radio{
+    margin-bottom: 10px;
+}
+.mui-table-view-cell3:after{
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;}
+.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right:after {
+    content: url("../img/icon-checked.png");
+}
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
+    content: url("../img/icon-check.png");
+    zoom: 0.5;
+}
+
+.cm-list>li{
+	margin-bottom: 10px;
+}
+
+ul{
+	list-style: none;
+}
+.cm-checkbox h4{
+	margin: 0;
+	font-style: inherit;
+	font-weight: initial;
+	font-size: 15px;
+}
+.cm-checkbox .mui-table-view{
+	font-size: 14px;
+}
+.cm-checkbox .mui-table-view-cell:after{
+	right: 15px;
+}
+.cm-icon-checkbox{
+	display: inline-block;
+	vertical-align: top;
+}
+.cm-icon-checkbox:before{
+	content: '';
+	width: 35px;
+	height: 35px;
+	display: block;
+	background: url(../img/icon-check.png) no-repeat;
+	background-size: contain;
+}
+.mui-active .cm-icon-checkbox:before{
+	background: url(../img/icon-checked.png) no-repeat;
+	background-size: contain;
+}
+.cm-checkbox .mui-table-view-cell:last-child:after{
+	content: none;
+}
+.cm-checkbox .mui-input-row label{
+	font-family: "微软雅黑","microsoft yahei";
+	font-size: 14px;
+}
+.cm-checkbox input[type=radio]:before{
+	content: '';
+	width: 35px;
+	height: 35px;
+	display: block;
+	background: url(../img/icon-check.png) no-repeat;
+	background-size: contain;
+}
+.cm-checkbox input[type=radio]:checked:before{
+	content: '';
+	background: url(../img/icon-checked.png) no-repeat;
+	background-size: contain;
+}
+.cm-checkbox .mui-table-view-cell{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.mui-segmented-control{
+	border: 0;
+	background-color: #FFFFFF;
+}
+.mui-segmented-control .mui-control-item:first-child:before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 40px;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	background-color: #f2f2f2;
+}
+.mui-segmented-control .mui-control-item{
+	position: relative;
+	color: #000000;
+	border-bottom: 1px solid red;
+	padding: 10px 0;
+	border-left: 0;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	background-color: initial;
+	color: #d89282;
+}
+.mui-segmented-control .mui-control-item.mui-active:after{
+	content: '';
+	position: absolute;
+    top: 19px;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 3px;
+    background: #FFFFFF;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    border:1px solid #f2f2f2;
+}
+.mui-segmented-control .mui-control-item{
+	border-color: #f2f2f2;
+}

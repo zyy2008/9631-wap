@@ -1,0 +1,26 @@
+.mui-poppicker{
+	background-color: #FFFFFF;
+}
+.mui-poppicker-header .mui-btn{
+	border: 0;
+}
+.mui-poppicker-btn-ok{
+	background-color: initial;
+	color: #000000;
+}
+.mui-picker{
+	background-color: #FFFFFF;
+}
+.mui-dtpicker-header{
+	background-color: #FFFFFF;
+}
+.mui-dtpicker-header button{
+	border: 0;
+}
+.mui-btn-blue{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.mui-dtpicker-title{
+	display: none;
+}

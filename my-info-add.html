@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+		<meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>新建收货地址</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
+		<link rel="stylesheet" href="css/base.css">
+		<style>
+			.mui-bar{
+				background-color: #FFFFFF;
+			}
+			.mui-content{
+				background-color: initial;
+				font-size: 15px;
+			}
+			.mui-input-group .mui-input-row{
+				height: auto;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 15px;
+			}
+			.cm-flex label{
+				width: 80px !important;
+			}
+			.mui-input-row label{
+				padding: 0;
+				line-height: 40px;
+			}
+			.mui-input-row label~textarea,
+			.mui-input-row label~input{
+				font-size: 15px;
+			}
+			.mui-checkbox label{
+				line-height: inherit;
+			}
+			.mui-checkbox p{
+				margin-bottom: 0;
+			}
+			.cm-flex textarea{
+				height: 40px;
+			}
+			.mui-table-view-cell{
+				padding: 0;
+			}
+			.mui-table-view-cell>a:not(.mui-btn){
+				height: 60px;
+				line-height: 60px;
+				margin: 0;
+				padding: 0 15px;
+			}
+			.mui-input-group .mui-input-row:after{
+				background-color: #f2f2f2;
+			}
+			.mui-navigate-right:after, .mui-push-right:after{
+				width: 10px;
+				height: 10px;
+				-webkit-transform: rotate(90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon cm-icon-back mui-pull-left"></a>
+		    <a class="mui-btn  mui-btn-link mui-pull-right">保存</a>
+		    <h1 class="mui-title">新建收货地址</h1>
+		</header>
+		<div class="mui-content">
+			<form class="mui-input-group mui-table-view">
+			    <div class="mui-input-row cm-flex">
+			       <label>收件人：</label>
+			        <input type="text" class="mui-input-clear cm-flex-1">
+			    </div>
+			    <div class="mui-input-row cm-flex">
+			        <label>手机号码：</label>
+			        <input type="tel" class="mui-input-clear cm-flex-1">
+			    </div>
+			    <div class="mui-table-view-cell">
+			    	<a id='region' href="#" class="mui-navigate-right cm-flex">
+			    		<label>所在地区：</label>
+			    		<p class="cm-flex-1 mui-ellipsis">rrrrrr</p>
+			    	</a>
+			    </div>
+			     <div class="mui-input-row cm-flex">
+			        <label>详细地址：</label>
+			        <textarea class="cm-flex-1"></textarea>
+			    </div>
+			    <div class="mui-input-row mui-checkbox">
+					<label>
+						设置默认地址
+						<p>注：每次下单时会使用该地址</p>
+					</label>
+					<input  type="checkbox">
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/mui.picker.min.js"></script>
+		<script>
+			mui.init();
+			mui.ready(function() {
+				var picker = new mui.DtPicker();
+				mui(document).on('tap', '#region', function() {
+					picker.show();
+				});
+				mui(document).on('tap', 'a', function() {
+					var href = this.href;
+					if(href) {
+						mui.openWindow({
+							url: href
+						});
+					} else {
+						return
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

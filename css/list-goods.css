@@ -1,0 +1,104 @@
+.cm-list-goods .mui-table-view-cell.mui-active{
+	background-color: initial;
+}
+.cm-list-goods .cm-hd{
+	background-color: #FFFFFF;
+}
+.cm-list-goods .cm-hd h4{
+	position: relative;
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #6d6d72;
+    margin: 10px 15px 5px;
+}
+.cm-list-goods p.mui-ellipsis{
+	margin-top: 10px;
+	color: #000000;
+	font-size: 13px;
+	font-family: arial;
+	text-align: left;
+}
+.cm-list-goods .cm-ft a{
+	color: #000000;
+    margin: 20px 0;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.cm-list-goods .cm-bd .mui-table-view{
+	background-color: #f2f2f2;
+	padding: 0;
+	padding-bottom: 5px;
+}
+.cm-list-goods .cm-bd .mui-table-view-cell{
+	margin: 0;
+	padding-top: 5px;
+}
+.cm-list-goods .cm-bd .mui-table-view-cell:nth-child(odd){
+	padding-right: 2.5px;
+	padding-left: 5px;
+}
+.cm-list-goods .cm-bd .mui-table-view-cell:nth-child(even){
+	padding-left: 2.5px;
+	padding-right: 5px;
+}
+.cm-list-goods .cm-bd a{
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin: 0 !important;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	color: #000000;
+	text-align: left;
+}
+.cm-list-goods p.mui-ellipsis .cm-vip-prlce{
+	font-size: 11px;
+	color: #db998a;
+	padding-left: 10px;
+	text-decoration:none;
+}
+.cm-list-goods p.mui-ellipsis span{
+	font-size: 11px;
+	padding-left: 10px;
+	text-decoration:line-through;
+	color: #787878;
+}
+.cm-goods-img{
+	position: relative;
+	display: inline-block;
+}
+.cm-goods-img img{
+	vertical-align: top;
+}
+.cm-sold-out:before{
+	content: '';
+	width: 80px;
+	height: 80px;
+	display: block;
+	background: url(../img/icon-out.png);
+	background-size: contain;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.cm-list-goods .cm-ft a:after{
+	content: '';
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: top;
+	background: url(../img/my-icon-right.png) no-repeat;
+	background-size: contain;
+	margin-left: 6px;
+	-webkit-transform: rotate(180deg);
+}

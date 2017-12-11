@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+		<meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>我的</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/my.css">
+		<style>
+			.alert_coupon{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				top:0;
+				z-index: 9999999;
+			}
+			.alert_coupon_shadow{
+				width: 100%;
+				height: 100%;
+				background-color: #000000;
+				opacity: 0.5;
+			}
+			.alert_coupon_center{
+				position: absolute;
+				left:calc(50% - 117px);
+				width: 235px;
+				height: 263px;
+				border-radius: 6px;
+				background: url('img/my_alert_back.png')no-repeat center #ffffff;
+				background-size: cover;
+			}
+			.alert_coupon_title{
+				font-size: 12px;
+				margin-top: 65px;
+				color: #5c4952;
+			}
+			.alert_coupon_center_nr{
+				width: 85%;
+				margin: 0 auto;
+			}
+			.alert_coupon_juan{
+				width: 100%;
+				height: 50px;
+				background: url("img/my_alert_juan.png")no-repeat center;
+				background-size: cover;
+				margin-top: 15px;
+			}
+			.alert_coupon_btn{
+				width: 74px;
+				height: 26px;
+				display: block;
+				margin: 0 auto;
+				border-radius: 35px;
+				border: 1px solid #000000;
+				font-size: 14px;
+				color: #000000;
+				text-align: center;
+				line-height: 26px;
+				margin-top: 20px;
+			}
+			.alert_coupon_btn2{
+				width: 86px;
+			}
+			@media (min-width: 410px) {
+				.alert_coupon_center{
+					width: 295px;
+					height: 323px;
+					left:calc(50% - 147px);
+				}
+				.alert_coupon_title{
+					font-size: 16px;
+				}
+				.alert_coupon_juan{
+					height: 75px;
+					margin-top: 25px;
+				}
+				.alert_coupon_btn{
+					width: 94px;
+					height: 28px;
+					line-height: 28px;
+					margin-top: 30px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div class="alert_coupon">
+			<div class="alert_coupon_shadow"></div>
+			<div class="alert_coupon_center">-->
+				<!--<div class="alert_coupon_center_nr alert_coupon_yes">-->
+					<!--<p class="alert_coupon_title">Dear，蜜桃~</p>-->
+					<!--<p class="alert_coupon_title" style="margin: 0;">一张免单券，已经打入您的账户</p>-->
+					<!--<div class="alert_coupon_juan">-->
+					<!--</div>-->
+					<!--<a class="alert_coupon_btn alert_btn_ok">去查看</a>-->
+				<!--</div>-->
+				<!--<div class="alert_coupon_center_nr alert_coupon_no">
+					<p class="alert_coupon_title">Dear，蜜桃~</p>
+					<p class="alert_coupon_title" style="margin: 0;">来晚一步，发布会伴手礼发放结束了呢～</p>
+					<p class="alert_coupon_title" style="margin: 0;">请继续关注我们，第一时间获知活动信息。</p>
+					<p class="alert_coupon_title" style="margin: 0;">也可以去浏览我们的商品。</p>
+					<a class="alert_coupon_btn alert_coupon_btn2 alert_btn_no">随便逛逛</a>
+				</div>
+			</div>
+		</div>-->
+		<header class="mui-bar">
+			<a class="mui-action-back mui-icon cm-icon-myback mui-pull-left"></a>
+			<!--add by zyy 2016-9-7 增加返回首页-->
+			<a class="mui-icon cm-icon-home mui-pull-right"></a>
+		</header>
+		<div class="mui-content">
+			<div class="cm-header">
+				<div class="cm-head">
+					<!--增加默认头像-->
+					<img src="img/icon-head.png" />
+					<h5>昵称</h5>
+				</div>
+				<div class="mui-bar-tab">
+				<a class="mui-tab-item cm-left" href="https://www.baidu.com/">
+					<div class="mui-icon mui-table">
+						<div class="mui-tab-item cm-active">
+							<i class="mui-icon cm-icon-my9"></i>
+						</div>
+						<div class="mui-tab-item">
+							<i class="mui-icon cm-icon-my6"></i>
+						</div>
+						<div class="mui-tab-item">
+							<i class="mui-icon cm-icon-my3"></i>
+						</div>
+						<div class="mui-tab-item">
+							<i class="mui-icon cm-icon-my1"></i>
+						</div>
+					</div>
+					<span class="mui-tab-label">集齐勋章，获得会员身份</span>
+				</a>
+				<a class="mui-tab-item cm-right" href="https://www.baidu.com/">
+					<div class="mui-icon">18<span>张</span></div>
+					<!--update by zyy 2016-9-6 当有优惠券的时候-->
+					<!--<span class="mui-tab-label cm-overdue">1张优惠券7天后过期</span>
+					<span class="mui-tab-label">将损失300元哦</span>-->
+					<!--当没有优惠券的时候显示-->
+					<span class="mui-tab-label cm-my-ticket">我的优惠券</span>
+				</a>
+			</div>
+			</div>
+			<div class="cm-body">
+				<div class="mui-table-view">
+					<div class="mui-table-view-cell">
+						  <a class="mui-navigate-right">
+		                    <span class="mui-badge">查看全部订单</span>我的订单
+		                </a>
+					</div>
+				</div>
+				<!--2016-9-6 调整 icon大小-->
+				<div class="mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon cm-icon-waitpay">
+							<span class="mui-badge">9</span>
+						</span>
+						<span class="mui-tab-label">待付款</span>
+					</a>
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon cm-icon-waitgoods"></span>
+						<span class="mui-tab-label">待收货</span>
+					</a>
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon cm-icon-waitrated"></span>
+						<span class="mui-tab-label">待评价</span>
+					</a>
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon cm-icon-returns"></span>
+						<span class="mui-tab-label">退换货</span>
+					</a>
+				</div>
+			</div>
+			<div class="cm-footer">
+				<!--upadte by zyy star 2016-9-6-->
+				<img src="img/my-footer-bg.jpg" />
+				<div class="cm-content">
+					<p>拥有一双罗马的你~,<br>与什么款式的鞋最匹配呢？</p>
+					<a href="#" class="mui-btn">查看我的第四围</a>
+				</div>
+				<!--end-->
+			</div>
+			<!--免费领取优惠券-->
+			<!--<div class="cm-footer-coupon">
+				<img src="img/my-measure-bg.png" />
+				<a class="mui-btn cm-btn" href="#">预约量足领取优惠券</a>
+			</div>-->
+			<!--到店量足-->
+			<!--<div class="cm-footer-list">
+				<div class="cm-goodsInfo-title">
+					<span class="mui-pull-left">到店量足</span>
+					<span class="mui-pull-right">等待到店测试</span>
+				</div>
+				<div class="mui-table-view">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+								<div class="cm-goodsInfo">
+									<img src="img/goodsinfo.png" class="cm-goodsInfo-img">
+									<div class="cm-goodsInfo-body">
+										<div class="cm-goodsInfo-info">
+											<h3 class="mui-ellipsis">美上门朝阳门合作店</h3>
+											<p class="mui-ellipsis">北京市朝阳区朝外大街日坛国际贸易
+				中心b座1Y27</p>
+										</div>
+									</div>
+								</div>
+								<div class="cm-list-info">
+									<p>进店福利：到店测量送免费足部护理一次</p>
+									<p>到店时间：2016.01.28 -2016.02.07</p>
+									<p>预约人：Jessica Dai</p>
+									<p>预约电话：18760899787</p>
+								</div>
+						</a>
+					</div>
+				</div>
+			</div>-->
+		</div>
+		<!--<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+			mui.init();
+			window.onload = function(){
+				var alert_center = $('.alert_coupon_center');
+				var top_zhi =  innerHeight/2 - alert_center.height()/2;
+				alert_center.attr('style','top:'+top_zhi+'px');
+				$('.alert_btn_ok').on('touchend',function(){
+//
+					mui.openWindow('http://www.baidu.com');
+				});
+				$('.alert_btn_no').on('touchend',function(){
+					mui.openWindow('http://www.baidu.com');
+				});
+			}
+		</script>-->
+	</body>
+</html>

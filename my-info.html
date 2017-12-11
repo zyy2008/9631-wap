@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+		<meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>我的</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/picker.css">
+		<style>
+			.mui-bar{
+				background-color: #FFFFFF;
+			}
+			
+			.mui-content {
+				background-color: initial;
+			}
+			
+			.cm-head img {
+				position: absolute;
+				bottom: 10px;
+				right: 35px;
+				width: 35px;
+				height: 35px;
+				border-radius: 100%;
+			}
+			
+			.cm-head input{
+				position: absolute;
+			    left: 0px;
+			    top: 0px;
+			    width: 100%;
+			    height: 100%;
+			    opacity: 0;
+			    cursor: pointer;
+			    z-index: 0;
+			}
+			
+			.cm-table-view1 {
+				margin-top: 30px;
+			}
+			
+			.mui-content>.mui-table-view:last-child {
+				margin-top: 15px;
+			}
+			
+			.mui-table-view-cell>a:not(.mui-btn) {
+				font-size: 15px;
+				line-height: 35px;
+			}
+			
+			.mui-pull-right {
+				white-space: initial;
+				width: 200px;
+				text-align: right;
+				padding-right: 20px;
+				color: #787878;
+			}
+			
+			.cm-head {
+				line-height: 35px !important;
+			}
+			
+			.cm-address {
+				line-height: 35px !important;
+			}
+			
+			.cm-address .mui-pull-right {
+				line-height: 17.5px;
+			}
+			
+			.mui-table-view-cell:last-child:after {
+				content: none;
+			}
+			.mui-content-padded{
+				margin: 30px 30px;
+			}
+			.mui-navigate-right:after, .mui-push-right:after{
+				top:0;
+				bottom: 0;
+				margin: auto;
+				-webkit-transform: rotate(90deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon cm-icon-back mui-pull-left"></a>
+			<a class="mui-icon cm-icon-home mui-pull-right"></a>
+			<h1 class="mui-title">个人信息</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="mui-navigate-right cm-head">头像
+						<span class="mui-pull-right">
+						<input type="file" accept="image/*">
+						<img  src="">
+					</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="my-info-nickname.html" class="mui-navigate-right">昵称<span class="mui-pull-right">Hbuilder</span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id='birthday' class="mui-navigate-right">出生日期<span class="mui-pull-right">hbuilder@dcloud.io</span></a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right  cm-address">地址管理<span class="mui-pull-right mui-text-left">北京市昌平区建材城西二里215号楼9层</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="mui-content-padded">
+			<button  class="mui-btn mui-btn-block cm-btn-pink">退出当前登录</button>
+		</div>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/mui.picker.min.js"></script>
+		<script>
+			mui.init();
+			mui.ready(function() {
+				var picker = new mui.DtPicker({"type":"date","beginYear":2014,"endYear":2016});
+				mui(document).on('tap', '#birthday', function() {
+					picker.show();
+				});
+				mui(document).on('tap', 'a', function() {
+					var href = this.href;
+					if(href) {
+						mui.openWindow({
+							url: href
+						});
+					} else {
+						return
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

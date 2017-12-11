@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+    <meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>评价晒单</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/order_thesun.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+<body>
+<header class="mui-bar mui-bar-nav my_order_header">
+    <a href="my_order.html"><img src="img/icon_return.png" class="mui-pull-left my_order_title_return"></a>
+    <h1 class="mui-title">评价晒单</h1>
+</header>
+<div class="mui-card-header mui-card-media my_order_thesun_sp">
+    <img class="my_order_dd_list_img_zp" src="http://dcloud.io/hellomui/images/logo.png">
+    <div class="mui-media-body my_order_dd_list_zi_zp">
+        <p class="my_order_dd_list_zi_ma_zp">赠品套装】天才哈哈哈哈</p>
+    </div>
+</div>
+<div class="mui-table-view-cell order_thesun_list">
+    <div class="mui-table">
+        <div class="mui-table-cell mui-col-xs-10">
+            <p class="mui-ellipsis-2">质量不错啊哈哈哈哈哈</p>
+            <p class="mui-h6 mui-ellipsis">2014-10-5 22：22：10</p>
+            <div class="order_thesun_list_img_center">
+                <img class="order_thesun_list_img" name="thesun_tu" src="img/my-bg.png">
+                <img class="order_thesun_list_img" name="thesun_tu" src="img/my-bg.png">
+                <img class="order_thesun_list_img" name="thesun_tu" src="img/my-bg.png">
+                <img class="order_thesun_list_img" name="thesun_tu" src="img/my-bg.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mui-content-padded">
+    <p>
+        p. 目前最接近原生App效果的框架。
+    </p>
+</div>
+<div class="mui-input-row" style="border: none">
+    <textarea id="textarea" rows="5" placeholder="请数输入想要追加的评价内容"></textarea>
+    <span class="thtesun_text_zi">1/500</span>
+</div>
+<div id="feedback" class="mui-page feedback mui-page-center" style="">
+    <div class="mui-page-content">
+        <div id='image-list' class="row image-list">
+        </div>
+    </div>
+</div>
+<div class="mui-content-padded thesun_btn">
+    <button id='thesun_submit' class="mui-btn mui-btn-block cm-btn-pink">提 交</button>
+</div>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/feedback-page.js"></script>
+<script>
+    $(function(){
+         var thesun = $('.order_thesun_list_img');
+        thesun.height(thesun.width());
+        window.onresize = function(){
+            var thesun = $('.order_thesun_list_img');
+            thesun.height(thesun.width());
+        }
+    });
+    $('#textarea').on('input propertychange',function(){
+        var text_length = $('#textarea').val().length;
+        $('.thtesun_text_zi').text(text_length+'/500');
+    });
+</script>
+
+</body>
+</html>

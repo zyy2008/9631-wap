@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+    <meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/my_order.css">
+    <link rel="stylesheet" href="css/picker.css">
+    <style>
+       .my_order_btn_sh_pj{
+           width: 100%;
+           overflow: hidden;
+           height: auto;
+       }
+    </style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav my_order_header">
+    <a href="my_order.html"><img src="img/icon_return.png" class="mui-pull-left my_order_title_return"></a>
+    <h1 class="mui-title">订单详情</h1>
+</header>
+<ul class="mui-table-view my_order_details_ul">
+    <!--单号-->
+    <li class="mui-table-view-cell mui-media my_order_details_ddh">
+        <a href="javascript:;">
+            <div class="mui-media-body">
+                订单号：7895674
+            </div>
+        </a>
+    </li>
+    <!--物流-->
+    <li class="mui-table-view-cell mui-media my_order_details_wl">
+        <a href="javascript:;">
+            <div class="mui-media-body">
+                <p class="my_order_details_zi">你提交了订单，请等待系统确认</p>
+                <p class="my_order_details_zi2">2016-08-10 12：22：56</p>
+            </div>
+        </a>
+    </li>
+    <!--信息-->
+    <li class="mui-table-view-cell mui-media my_order_details_ddxx">
+        <a href="javascript:;">
+            <div class="mui-media-body">
+                <span class="my_order_details_name">刘磊</span><span class="my_order_details_tel">136*******1462</span>
+                <p class="mui-ellipsis my_order_details_GPS">北京日坛国际贸易中心1Y27</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<div class="my_order_list">
+    <div class="my_order_zt"><span class="mui-pull-left my_time">下单时间 ：2016-02-29</span><span class="mui-pull-right my_zt">付款成功</span></div>
+    <div class="mui-card-header mui-card-media my_order_dd_list" >
+        <img class="my_order_dd_list_img" src="http://dcloud.io/hellomui/images/logo.png">
+        <div class="mui-media-body my_order_dd_list_zi">
+            春秋冬季你好哈哈哈
+            <p class="my_order_dd_list_zi_ma">颜色：黑色 尺码：36</p>
+            <span class="mui-pull-right my_order_dd_list_zi_jiage">￥799</span>
+        </div>
+    </div>
+    <div class="mui-card-header mui-card-media my_order_dd_list_zp" >
+        <img class="my_order_dd_list_img_zp" src="http://dcloud.io/hellomui/images/logo.png">
+        <div class="mui-media-body my_order_dd_list_zi_zp">
+            <p class="my_order_dd_list_zi_ma_zp">【赠品套装】天才哈哈哈哈</p>
+            <span class="mui-pull-right my_order_dd_list_zi_jiage">￥0</span>
+            <span class="mui-pull-right my_order_dd_list_zi_jiage-yuan">￥799</span>
+        </div>
+    </div>
+    <div class="details_center_btn">
+        <span class="mui-btn mui-btn-success_pingjia appraise details_left">评价晒单</span>
+        <span class="mui-btn mui-btn-success_shouhou color_hui details_left">换货中</span>
+
+    </div>
+    <div style="height: 1px;background-color: #F2F2F2;width: 100%;margin: 10px 0 10px 0"></div>
+    <p class="my_order_rmb">共1件商品 实付款：￥1119</p>
+</div>
+<!--提示付款弹框-->
+<div class="my_order_details_alert">
+    <!--默认状态-->
+    <!--<span class="mui-pull-left my_order_details_fuk_zi">您还没有付款哦~</span>
+    <span class="mui-btn mui-btn-success_ok">去付款</span>
+    <span class="mui-btn mui-btn-success_clear" id="showUserPicker">取消订单</span>-->
+    <!--确认收货后展示评价晒单（默认状态隐藏）-->
+    <span class="mui-btn mui-btn-success_pingjia">评价晒单</span>
+</div>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/mui_picker.js"></script>
+<script type="text/javascript" src="js/mui_poppicker.js"></script>
+<script>
+    (function($, doc) {
+        $.init();
+        $.ready(function() {
+            //普通示例
+            var userPicker = new $.PopPicker();
+            userPicker.setData([{
+                value: 'ywj',
+                text: '我不想买了'
+            }, {
+                value: 'aaa',
+                text: '拍错了'
+            },{
+                value: 'gezh',
+                text: '质量不好'
+            },{
+                value: 'gezh',
+                text: '其他原因'
+            }]);
+            var showUserPickerButton = doc.getElementById('showUserPicker');
+            showUserPickerButton.addEventListener('tap', function(event) {
+                userPicker.show(function(items) {
+                    console.log(JSON.stringify(items[0].text));
+                    //返回 false 可以阻止选择框的关闭
+                    //return false;
+                });
+            }, false);
+        });
+    })(mui, document);
+    mui('.my_order_details_ul').on('tap','.my_order_details_wl',function(){
+        mui.openWindow('my_order_logistics.html');
+    });
+    mui('.my_order_details_alert').on('tap','.mui-btn-success_pingjia',function(){
+        mui.openWindow('my_order_thesun.html');
+    });
+    mui(document).on('tap','.mui-btn-success_shouhou',function(){
+        mui.openWindow('my_order_service.html');
+    });
+    mui(document).on('tap','.my_order_title_return',function(){
+        mui.openWindow('my_order.html');
+    });
+</script>
+</body>
+</html>

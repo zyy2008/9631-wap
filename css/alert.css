@@ -1,0 +1,44 @@
+.mui-popup-inner,
+.mui-popup-button{
+	background-color: initial;
+}
+.mui-popup-title{
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.mui-popup-title+.mui-popup-text{
+	text-align: left;
+}
+.mui-popup{
+	background: url(../img/icon-alert-bg.png) no-repeat;
+	background-size:100% 100%;
+	border-radius: 0;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	width: 300px;
+}
+.mui-popup-inner:after,
+.mui-popup-button:after{
+	content: none;
+}
+.mui-popup-buttons{
+	height: 35px;
+	margin-top: 20px;
+}
+.mui-popup-button{
+	font-size: 14px;
+	border: 1px solid #000000;
+	border-radius: 15px !important;
+	color: #000000;
+	line-height: 35px;
+	height: 35px;
+	margin: 0px 10px;
+	padding: 0;
+}
+.mui-popup-button:last-child{
+	border-color: #d89282;
+	color: #d89282;
+}
+.mui-popup-button.mui-popup-button-bold{
+	font-weight: initial;
+}

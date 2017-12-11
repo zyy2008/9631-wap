@@ -1,0 +1,107 @@
+body{
+	background: url(../img/login-new-bg.png) no-repeat center top;
+	margin: auto;
+	background-size: cover;
+}
+.mui-content{
+	background-color: rgba(0,0,0,0);
+}
+.cm-icon-close{
+	width: 20px;
+	height: 20px;
+	background-image:url(../img/login-new-close.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute !important;
+	left: 10px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.cm-icon-nickname {
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/login-new-account.png);
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+.cm-icon-qr {
+   	width: 26px;
+    height: 26px;
+    background-image: url(../img/login-new-vq.png);
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+.mui-content{
+	padding-top: 80px;
+}
+.cm-logo img{
+	width: 100px;
+	vertical-align: top;
+}
+
+.cm-input-group{
+	padding:30px 40px;
+	background-color: rgba(0,0,0,0);
+}
+.cm-input-group:before,
+.cm-input-group:after{
+	content: none;
+}
+.mui-input-group .mui-input-row:after{
+	background-color: #FFFFFF;
+	left: 0;
+	opacity: .8;
+}
+.cm-input-group label{
+	width: 100px !important;
+}
+.mui-input-row label~input{
+	font-family: "微软雅黑","microsoft yahei";
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.mui-input-row label~input::-webkit-input-placeholder{
+	color: #FFFFFF;
+}
+
+.cm-code{
+	position: relative;
+}
+.cm-code:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	height: 20px;
+	background-color: rgba(255,255,255,.3);
+	margin: auto;
+}
+.cm-code input{
+	font-family: "微软雅黑","microsoft yahei" !important;
+	color: #FFFFFF !important;
+	width: auto !important;
+}
+.cm-btn-pink+.mui-ellipsis{
+	color: #FFFFFF;
+	font-size: 14px;
+	padding: 10px 0;
+}
+.cm-btn-pink+.mui-ellipsis a{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.cm-btn-pink{
+	background-color: rgba(0,0,0,0);
+	border: 1px solid #FFFFFF;
+}
+.cm-footer{
+	margin: 10px 40px;
+}
+.mui-input-group .mui-input-row{
+	height: 60px;
+	padding: 10px 0;
+}

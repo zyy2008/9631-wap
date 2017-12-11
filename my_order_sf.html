@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="keywords" content="时尚女鞋、9631、9631cm、9631CM、9631cm品牌、9631CM品牌、9631cm鞋、9631CM鞋、9631cm女鞋、9631CM女鞋、9631官网、9631cm官网、9631CM官网、9631客服、9631cm客服、9631场景穿搭、高跟鞋女鞋、品牌女鞋、女鞋品牌、量足、脚型数据、脚型、大数据">
+    <meta name="description" content="9631cm是一个轻轻奢场景化购物女鞋品牌。品牌用9、6、3、1四个鞋跟高度，精准对应女性四大类主流日常生活场景（聚会，工作，休闲，旅行）。围绕场景需求提供最适合的时尚鞋履，9631cm倡导当代女性生活场景多样化。">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>填写快递信息</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <style>
+        body{
+            background-color: #f2f2f2;
+            height: auto;
+            overflow-x: hidden;
+            font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimHei,sans-serif;
+        }
+
+        ul,p{
+            margin: 0;
+            padding: 0;
+        }
+        .my_order_header{
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #f2f2f2;
+            position: relative;
+            box-shadow: none;
+            margin-bottom: 10px;
+        }
+        .my_order_header,.mui-title{
+            height: 50px;
+            line-height: 50px;
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .my_order_title_return{
+            background: url("img/icon_return.png")no-repeat center;
+            background-size: cover;
+            margin-top: 14px;
+            height: 22px;
+        }
+        .mui-input-row{
+            position: relative;
+        }
+        .mui-input-row span{
+            color: #787878;
+            font-size: 12px;
+            position: absolute;
+            right: 35px;
+            top: 11px;
+        }
+        .cm-btn-pink{
+            background-color: #d89282;
+            color: #FFFFFF;
+            border: 0;
+            border-radius: 30px;
+            font-size: 15px;
+            padding: 10px 0;
+
+        }
+        .thesun_btn{
+            background:none;
+            padding-top: 50px;
+            padding-bottom: 18px;
+        }
+        .my_order_sf{
+            background: url("img/icon-list.png")no-repeat right #ffffff;
+            background-position: calc(100% - 10px);
+            background-size: 8px;
+        }
+    </style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav my_order_header">
+    <a href="my_order_details.html"><img src="img/icon_return.png" class="mui-pull-left my_order_title_return"></a>
+    <h1 class="mui-title">填写快递信息</h1>
+</header>
+<form class="mui-input-group">
+    <div class="mui-input-row my_order_sf">
+        <label>物流公司</label>
+        <input type="text" placeholder="">
+        <span>顺丰</span>
+    </div>
+    <div class="mui-input-row">
+        <label>快递单号</label>
+        <input type="text" class="mui-input-clear" placeholder="" data-input-clear="5"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+    </div>
+
+</form>
+<div class="mui-content-padded thesun_btn">
+    <button id='thesun_submit' class="mui-btn mui-btn-block cm-btn-pink">提 交</button>
+</div>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script>
+    mui(document).on('tap','.my_order_sf',function(){
+        mui.openWindow('my_order_sf_list.html');
+    });mui(document).on('tap','.my_order_title_return',function(){
+        mui.openWindow('my_order_service.html');
+    });
+</script>
+</body>
+</html>

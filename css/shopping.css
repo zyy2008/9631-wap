@@ -1,0 +1,237 @@
+.mui-bar{
+	background-color: #FFFFFF;
+}
+.cm-shoppingcar{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	overflow-y: auto;
+}
+.cm-active .cm-list-good .mui-checkbox:before{
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url(../img/icon-out.png) no-repeat;
+	background-size: contain;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 50px;
+}
+.mui-table-view-cell>a>.mui-badge{
+	position: initial;
+	-webkit-transform: none; 
+	transform: none;
+	background-color: #250a04;
+	color: #FFFFFF;
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+.mui-content>.mui-table-view:first-child{
+	background-color: #f6dfc8;
+	font-size: 14px;
+	margin-top: 0;
+}
+.mui-table-view-cell:after{
+	content: none;
+}
+.mui-checkbox input[type=checkbox]{
+	right: initial;
+	z-index: 1;
+	left: 0px;
+	width: 25px;
+	height: 25px;
+}
+.mui-table .mui-col-xs-10{
+	padding-left: 40px;
+}
+.mui-table .mui-col-xs-2{
+	color: #000000;
+	font-size: 13px;
+}
+.mui-table-view-cell p{
+	color: #000000;
+	font-size: 14px;
+}
+.mui-table-view-cell p span{
+	color: #545454;
+	font-size: 13px;
+	padding-right: 20px;
+}
+.mui-table-view .mui-media-object{
+	border: 1px solid #f0f0f0;
+	border-radius: 5px;
+	max-width: 60px;
+	height: 60px;
+}
+.cm-list-gift{
+	position: relative;
+	padding: 10px 0;
+}
+.cm-list-gift .mui-media-object{
+	max-width: 40px;
+	height: 40px;
+}
+.cm-list-gift .mui-media-body p{
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+.cm-list-gift.cm-active:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,.5);
+}
+.mui-table-view-cell:after{
+	content: '';
+	left: 0;
+}
+.cm-listing .mui-navigate-right{
+	font-size: 12px;
+}
+.cm-goods-discount{
+	text-decoration:line-through;
+	color: #c0c0c0 !important;
+}
+.cm-list-good{
+	padding: 10px 0;
+}
+.cm-icon-list-delete:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../img/icon-list-delete.png) no-repeat;
+	background-size: contain;
+	vertical-align: top;
+}
+.mui-bar-footer{
+	padding: 0;
+	height: 50px;
+}
+.mui-bar-footer .mui-table{
+	height: 100%;
+}
+.mui-bar-footer .mui-col-xs-9{
+	padding-left: 0;
+	background-color: #303030;
+	padding-left: 30px;
+}
+.mui-bar-footer .mui-col-xs-3{
+	background-color: #eb6363;
+	display:table-cell;
+	font-size: 14px;
+	text-align: center;
+	line-height: 50px;
+	padding: 0;
+	color: #FFFFFF;
+}
+.mui-bar-footer p{
+	margin-bottom: 0;
+	padding-left: 15px;
+	color: #FFFFFF;
+}
+.mui-checkbox input[type=checkbox][disabled]:before,
+.mui-radio input[type=radio][disabled]:before {
+	opacity:1
+}
+.cm-icon-drop:before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/icon-drop.png) no-repeat;
+	background-size: contain;
+	vertical-align: top;
+	padding-right: 10px;
+}
+.cm-icon-ku:before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/icon-ku.png) no-repeat;
+	background-size: contain;
+	vertical-align: top;
+	padding-right: 10px;
+}
+.mui-table-view-cell i{
+	font-size: 13px;
+	line-height: 16px;
+}
+.cm-icon-ku{
+	color: #e86363;
+}
+.cm-icon-drop{
+	color: #efa257;
+}
+.cm-bottom-flex+.cm-shoppingcar{
+	bottom: 91px;
+}
+.cm-bottom-flex{
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	background-color: #f5e3d0;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px 0;
+}
+.cm-bottom-flex .mui-badge{
+	background-color: #250a04;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+
+
+/*无商品列表时*/
+.cm-shopping-nolist{
+	width: 196px;
+	height: 158px;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: inline-block;
+}
+.cm-shopping-nolist img{
+	width: 70px;
+}
+.cm-shopping-nolist .cm-btn{
+	width: 150px;
+	height: 35px;
+	font-size: 15px;
+	display: inline-block;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid #d89282;
+	color: #d89282;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	width: 10px;
+	height: 10px;
+	background: url(../img/icon-arrowright.png) no-repeat;
+	background-size: contain;
+}
+.cm-info-noactive span{
+	padding-left: 20px;
+}
